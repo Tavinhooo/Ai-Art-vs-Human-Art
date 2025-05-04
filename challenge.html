@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art vs. Human Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+  <body>
+    <!-- Navigation  -->
+    <nav class="navbar navbar-expand-lg bg-dark text-light sticky-top border-bottom" role="navigation">
+      <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center gap-2 py-3">
+        <button class="btn btn-warning custom-btn me-3" onclick="window.location.href='homepage.html'">
+          <strong>AI Art vs. Human Art</strong>
+        </button>
+        <div class="flex-grow-1 text-center">
+          <button class="btn btn-danger btn-lg custom-btn" onclick="window.location.href='challenge.html'">
+          🚀 Challenge!!!
+          </button>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-primary custom-btn" onclick="window.location.href='post_page.html'">Add a post</button>
+          <button class="btn btn-outline-light custom-btn" onclick="window.location.href='login.html'">Login</button>
+        </div>
+      </div>
+    </nav>
+    <main class="container my-5 text-center">
+      
+      <h2 class="mb-5 fw-bold text-light" style="font-size: 2rem; letter-spacing: 0.5px;">
+         Which one is <span class="text-warning">real</span> ?
+         <div id="feedback" class="text-light text-center mt-4" style="display: none;"></div>
+      </h2>
+    
+      <div class="row align-items-center justify-content-center g-4">
+        <!-- Left Artwork -->
+        <div class="col-md-5">
+          <button class="choice-button w-100 border-0 bg-transparent p-0" data-choice="ai">
+            <div class="aspect-ratio-box mb-3">
+              <img src="Real_image_0.png" alt="Left artwork" class="challenge-image mb-3" />
+            </div>
+          </button>
+          
+          <h5 class="text-light">"Sunset Machine"</h5>
+          <p class="text-secondary">by AI Model A</p>
+        </div>
+    
+        <!-- VS -->
+        <div class="col-md-2 d-flex justify-content-center align-items-center">
+          <div class="fw-bold py-2 px-4 rounded-circle" style="font-size: 2rem; background-color: orange; color: black;">
+            VS
+          </div>
+        </div>
+        
+    
+        <!-- Right Artwork -->
+        <div class="col-md-5">
+          <button class="choice-button w-100 border-0 bg-transparent p-0" data-choice="real">
+            <div class="aspect-ratio-box mb-3">
+              <img src="Ai_image_0.png" alt="Right artwork" class="challenge-image mb-3" />
+            </div>
+          </button>
+          <h5 class="text-light">"Twilight Fields"</h5>
+          <p class="text-secondary">by Human Artist B</p>
+        </div>
+      </div>
+    
+      <!--Challenge Score -->
+    <div class="mt-5 d-flex justify-content-center">
+      <div class="fw-bold py-2 px-4 rounded-pill" style="font-size: 1.25rem; background-color: orange; color: black;">
+        Challenge Score: 0
+      </div>
+    </div>
+    </main>
+  
+
+    <footer class="container-fluid bg-dark py-3 text-center">
+      <small class="text-secondary">Date and other info Â© 2025</small>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src ="scripts.js"></script>
+</body>
+</html>
